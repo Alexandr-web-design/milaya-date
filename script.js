@@ -1,18 +1,18 @@
 const places=[
-{title:"ВДНХ",category:"walk",mood:"Фонтаны и красивые павильоны",description:"Спокойная прогулка, красивые фото и разговоры без спешки.",image:"vdnh.jpg",tag:"романтичная прогулка"},
-{title:"Речной трамвайчик",category:"view",mood:"Москва с воды",description:"Вечерняя прогулка по Москве-реке с видом на город.",image:"river.jpg",tag:"вечер с видом"},
-{title:"Антикафе с минипигами",category:"cute",mood:"Мило и необычно",description:"Свидание с животными, какао и лёгкой атмосферой.",image:"pigs.jpg",tag:"самый милый вариант"},
-{title:"Москва-Сити",category:"view",mood:"Небоскрёбы и огни",description:"Можно погулять рядом, подняться на смотровую или завершить вечер ужином.",image:"city.jpg",tag:"панорамный вечер"},
-{title:"White Rabbit",category:"food",mood:"Ужин с панорамным видом",description:"Красивый ресторанный формат для особенного вечера.",image:"rabbit.jpg",tag:"особенный ужин"},
-{title:"Патриаршие пруды",category:"walk",mood:"Кофе, прогулка и уют",description:"Очень московская атмосфера, спокойная прогулка и разговоры.",image:"patriarch.jpg",tag:"уютный вечер"},
-{title:"Зарядье",category:"walk",mood:"Парк и парящий мост",description:"Центр Москвы, красивые виды и фотографии.",image:"zaryadye.jpg",tag:"красивый центр"},
-{title:"Смотровая площадка",category:"view",mood:"Вид на город с высоты",description:"Вариант для вау-эффекта и запоминающегося вечера.",image:"rooftop.jpg",tag:"вау-вид"},
-{title:"Аптекарский огород",category:"walk",mood:"Цветы и оранжереи",description:"Нежное свидание среди растений и зелени.",image:"garden.jpg",tag:"нежная прогулка"},
-{title:"Кофейня с десертами",category:"food",mood:"Какао и сладкое",description:"Уютный столик, десерт и хороший разговор.",image:"coffee.jpg",tag:"уют и сладкое"},
-{title:"VIP-кинотеатр",category:"cute",mood:"Уютное кино на двоих",description:"Лёгкий фильм, попкорн и спокойный вечер.",image:"cinema.jpg",tag:"спокойный вечер"},
-{title:"ГУМ и Красная площадь",category:"walk",mood:"Классика Москвы",description:"Огни ГУМа, центр города, мороженое и фото.",image:"gum.jpg",tag:"московская классика"},
-{title:"Пушкинский музей",category:"cute",mood:"Красиво и спокойно",description:"Искусство, прогулка и кофе после музея.",image:"museum.jpg",tag:"культурное свидание"},
-{title:"Парк Горького",category:"walk",mood:"Набережная и прогулка",description:"Классика для свидания: пространство, воздух и приятная атмосфера.",image:"park.jpg",tag:"лёгкая прогулка"}
+{title:"ВДНХ",category:"walk",mood:"Фонтаны и красивые павильоны",description:"Спокойная прогулка, красивые фото и разговоры без спешки.",image:"images/vdnh.jpg",tag:"романтичная прогулка"},
+{title:"Речной трамвайчик",category:"view",mood:"Москва с воды",description:"Вечерняя прогулка по Москве-реке с видом на город.",image:"images/river.jpg",tag:"вечер с видом"},
+{title:"Антикафе с минипигами",category:"cute",mood:"Мило и необычно",description:"Свидание с животными, какао и лёгкой атмосферой.",image:"images/pigs.jpg",tag:"самый милый вариант"},
+{title:"Москва-Сити",category:"view",mood:"Небоскрёбы и огни",description:"Можно погулять рядом, подняться на смотровую или завершить вечер ужином.",image:"images/city.jpg",tag:"панорамный вечер"},
+{title:"White Rabbit",category:"food",mood:"Ужин с панорамным видом",description:"Красивый ресторанный формат для особенного вечера.",image:"images/rabbit.jpg",tag:"особенный ужин"},
+{title:"Патриаршие пруды",category:"walk",mood:"Кофе, прогулка и уют",description:"Очень московская атмосфера, спокойная прогулка и разговоры.",image:"images/patriarch.jpg",tag:"уютный вечер"},
+{title:"Зарядье",category:"walk",mood:"Парк и парящий мост",description:"Центр Москвы, красивые виды и фотографии.",image:"images/zaryadye.jpg",tag:"красивый центр"},
+{title:"Смотровая площадка",category:"view",mood:"Вид на город с высоты",description:"Вариант для вау-эффекта и запоминающегося вечера.",image:"images/rooftop.jpg",tag:"вау-вид"},
+{title:"Аптекарский огород",category:"walk",mood:"Цветы и оранжереи",description:"Нежное свидание среди растений и зелени.",image:"images/garden.jpg",tag:"нежная прогулка"},
+{title:"Кофейня с десертами",category:"food",mood:"Какао и сладкое",description:"Уютный столик, десерт и хороший разговор.",image:"images/coffee.jpg",tag:"уют и сладкое"},
+{title:"VIP-кинотеатр",category:"cute",mood:"Уютное кино на двоих",description:"Лёгкий фильм, попкорн и спокойный вечер.",image:"images/cinema.jpg",tag:"спокойный вечер"},
+{title:"ГУМ и Красная площадь",category:"walk",mood:"Классика Москвы",description:"Огни ГУМа, центр города, мороженое и фото.",image:"images/gum.jpg",tag:"московская классика"},
+{title:"Пушкинский музей",category:"cute",mood:"Красиво и спокойно",description:"Искусство, прогулка и кофе после музея.",image:"images/museum.jpg",tag:"культурное свидание"},
+{title:"Парк Горького",category:"walk",mood:"Набережная и прогулка",description:"Классика для свидания: пространство, воздух и приятная атмосфера.",image:"images/park.jpg",tag:"лёгкая прогулка"}
 ];
 
 let selectedPlace=null,currentCategory="all";
