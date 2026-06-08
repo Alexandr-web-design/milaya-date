@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Любимая, пойдём на свидание? 💙</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky"></div>
+  <div class="floating f1">💙</div>
+  <div class="floating f2">✨</div>
+  <div class="floating f3">💌</div>
+
+  <header class="topbar">
+    <a href="#home" class="logo">💙 Для любимой</a>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#places">Места</a>
+      <a href="#route">Маршрут</a>
+      <a href="#plan">Выбор</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page" id="home">
+      <div class="hero-text">
+        <span class="tag">приглашение на свидание</span>
+        <h1>Солнышко, пойдём на свидание?</h1>
+        <p>
+          Я собрал красивые места Москвы с настоящими фотографиями.
+          Можно выбрать настроение вечера, дату и время — а дальше я всё организую 💙
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#places" class="btn">Выбрать место</a>
+          <a href="#route" class="btn light">Посмотреть маршрут</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="images/hero.jpg" alt="Вечер в Москве">
+        <div>
+          <span>DATE</span>
+          <h3>Вечер, который хочется запомнить</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>14</strong><span>идей для свидания</span></div>
+      <div><strong>3</strong><span>готовых сценария</span></div>
+      <div><strong>1</strong><span>красивая причина встретиться</span></div>
+    </section>
+
+    <section class="page" id="places">
+      <div class="section-title">
+        <span class="tag">куда можно сходить</span>
+        <h2>Выбери место</h2>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" onclick="filterPlaces('all', this)">Все</button>
+        <button class="filter" onclick="filterPlaces('walk', this)">Прогулка</button>
+        <button class="filter" onclick="filterPlaces('view', this)">Виды</button>
+        <button class="filter" onclick="filterPlaces('food', this)">Ужин</button>
+        <button class="filter" onclick="filterPlaces('cute', this)">Милое</button>
+      </div>
+
+      <div class="places-grid" id="placesGrid"></div>
+    </section>
+
+    <section class="page" id="route">
+      <div class="section-title">
+        <span class="tag">сценарии вечера</span>
+        <h2>Можно выбрать целый маршрут</h2>
+        <p>Несколько готовых вариантов, если хочется не одно место, а полноценный вечер.</p>
+      </div>
+
+      <div class="route-grid">
+        <article class="route-card">
+          <img src="images/route_river.jpg" alt="Москва-река">
+          <div><h3>Романтичный вечер</h3><p>Речной трамвайчик → прогулка у воды → кофе или десерт.</p></div>
+        </article>
+
+        <article class="route-card">
+          <img src="images/route_city.jpg" alt="Москва-Сити">
+          <div><h3>Вечер с видом</h3><p>Москва-Сити → смотровая → красивый ужин.</p></div>
+        </article>
+
+        <article class="route-card">
+          <img src="images/route_pigs.jpg" alt="Минипиги">
+          <div><h3>Милое свидание</h3><p>Антикафе с минипигами → какао → прогулка по центру.</p></div>
+        </article>
+      </div>
+
+      <div class="timeline">
+        <div><b>1</b><h3>Встречаемся</h3><p>В удобном месте и без суеты.</p></div>
+        <div><b>2</b><h3>Гуляем</h3><p>Красивые виды, фото и разговоры.</p></div>
+        <div><b>3</b><h3>Берём вкусное</h3><p>Кофе, десерт или ужин.</p></div>
+        <div><b>4</b><h3>Завершаем вечер</h3><p>С хорошим настроением 💙</p></div>
+      </div>
+    </section>
+
+    <section class="page" id="plan">
+      <div class="planner">
+        <div>
+          <span class="tag">финальный выбор</span>
+          <h2>Дата и время</h2>
+          <p>После выбора появится финальное приглашение для тебя.</p>
+          <div class="selected-preview" id="selectedPreview">Пока место не выбрано 💙</div>
+        </div>
+
+        <div class="form">
+          <label>Дата<input type="date" id="dateInput"></label>
+          <label>Время<input type="time" id="timeInput"></label>
+          <label>Пожелание<textarea id="wishInput" placeholder="Например: хочу провести с тобой красивый вечер"></textarea></label>
+          <button onclick="createInvite()">Создать приглашение 💌</button>
+        </div>
+      </div>
+
+      <div class="result" id="result">
+        <div class="result-inner">
+          <span class="tag">официальное приглашение</span>
+          <h2>Малыш, я приглашаю тебя на свидание 💙</h2>
+          <p id="resultText"></p>
+          <button onclick="acceptInvite()">Согласна 💙</button>
+          <button onclick="acceptInvite()">Конечно согласна ✨</button>
+          <p class="accepted" id="acceptedText"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
